@@ -1,5 +1,5 @@
 //
-//  OverdueAssignmentViewController.h
+//  OverdueAssignmentTVC.h
 //  OverdueAssignment
 //
 //  Created by Alex Paul on 11/8/13.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddTaskViewController.h"
 
-@interface OverdueAssignmentViewController : UIViewController
+@interface OverdueAssignmentTVC : UITableViewController <AddTaskViewControllerDelegate>
 
 @end
