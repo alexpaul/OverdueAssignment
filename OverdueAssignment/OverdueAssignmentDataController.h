@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Task.h"
 
 @interface OverdueAssignmentDataController : NSObject
+
++ (NSDateFormatter *)dateFormatter;
++ (NSDictionary *)tasksAsAPropertyList:(Task *)newTask;
++ (void)updateNSUserDefaultsAtIndex:(int)index withTask:(Task *)task;
 
 @end

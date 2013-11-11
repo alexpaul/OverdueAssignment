@@ -14,3 +14,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define TITLE @"Title of Task"
+#define DESCRIPTION @"Description of Task"
+#define DATE @"Date of Task"
+#define ISCOMPLETE @"Is the task complete or not"
+#define TASKS_NSUSERDEFAULTS_KEY @"Key for Tasks in NSUserDefaults"
+
