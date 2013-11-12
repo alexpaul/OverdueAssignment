@@ -16,6 +16,11 @@
 // Format Date
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
+// UIView Elements
+@property (strong, nonatomic) IBOutlet UILabel *taskTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *taskDateLabel;
+@property (strong, nonatomic) IBOutlet UITextView *taskDetailsTextView;
+
 @end
 
 @implementation DetailTaskViewController

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57D7D23E182E4C94002E190A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7D23D182E4C94002E190A /* Task.m */; };
 		57D7D241182E60E0002E190A /* OverdueAssignmentDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7D240182E60E0002E190A /* OverdueAssignmentDataController.m */; };
+		57D7D243183241B1002E190A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57D7D242183241B1002E190A /* README.txt */; };
 		57DC476D182D963A00966B02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DC476C182D963A00966B02 /* Foundation.framework */; };
 		57DC476F182D963A00966B02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DC476E182D963A00966B02 /* CoreGraphics.framework */; };
 		57DC4771182D963A00966B02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DC4770182D963A00966B02 /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 		57D7D23D182E4C94002E190A /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		57D7D23F182E60E0002E190A /* OverdueAssignmentDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverdueAssignmentDataController.h; sourceTree = "<group>"; };
 		57D7D240182E60E0002E190A /* OverdueAssignmentDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverdueAssignmentDataController.m; sourceTree = "<group>"; };
+		57D7D242183241B1002E190A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = OverdueAssignment/README.txt; sourceTree = "<group>"; };
 		57DC4769182D963A00966B02 /* OverdueAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverdueAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DC476C182D963A00966B02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57DC476E182D963A00966B02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 		57DC4760182D963A00966B02 = {
 			isa = PBXGroup;
 			children = (
+				57D7D242183241B1002E190A /* README.txt */,
 				57DC4772182D963A00966B02 /* OverdueAssignment */,
 				57DC4791182D963B00966B02 /* OverdueAssignmentTests */,
 				57DC476B182D963A00966B02 /* Frameworks */,
@@ -264,6 +267,7 @@
 			files = (
 				57DC4785182D963A00966B02 /* Images.xcassets in Resources */,
 				57DC4777182D963A00966B02 /* InfoPlist.strings in Resources */,
+				57D7D243183241B1002E190A /* README.txt in Resources */,
 				57DC4780182D963A00966B02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

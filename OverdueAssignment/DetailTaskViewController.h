@@ -21,9 +21,4 @@
 // TableView Data Source Array
 @property (nonatomic, strong) NSMutableArray *tasksArray;
 
-// UIView Elements
-@property (strong, nonatomic) IBOutlet UILabel *taskTitleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *taskDateLabel;
-@property (strong, nonatomic) IBOutlet UITextView *taskDetailsTextView;
-
 @end

@@ -82,5 +82,4 @@
     self.toolbar.hidden = YES;
 }
 
-
 @end

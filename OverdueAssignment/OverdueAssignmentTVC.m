@@ -34,12 +34,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     // Get an Array of Tasks from NSUserDefaults
     NSArray *taskAsAPropertyList = [[NSUserDefaults standardUserDefaults]objectForKey:TASKS_NSUSERDEFAULTS_KEY];
@@ -83,7 +77,7 @@
     cell.detailTextLabel.text = task.description;
     
     // Set background color based on task being Complete, not Complete or Late
-    // Late: Red
+    // Overdue: Red
     // Current: Yellow
     // Complete: Green
     if (!task.isComplete) {
@@ -123,9 +117,6 @@
         [[NSUserDefaults standardUserDefaults]synchronize];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
 
