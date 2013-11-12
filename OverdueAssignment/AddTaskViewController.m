@@ -24,7 +24,6 @@
     self.toolbar.hidden = YES;
 }
 
-
 #pragma mark - UIButton Actions
 - (IBAction)cancelButtonPressed:(UIButton *)sender
 {

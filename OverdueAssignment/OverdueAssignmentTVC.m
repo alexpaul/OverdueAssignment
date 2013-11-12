@@ -148,14 +148,12 @@
     // Insert the Task in its new index
     [self.tasksArray insertObject:taskToBeMoved atIndex:toIndexPath.row];
     
-    // Save Reordering in NSUserDefaults
+    // Save Reordering to NSUserDefaults
     NSMutableArray *arrayNeedsToBeUpdatedInNSUserDefaults = [[NSMutableArray alloc] init];
-    
     for (Task *task in self.tasksArray) {
         NSDictionary *dictionary = [OverdueAssignmentDataController tasksAsAPropertyList:task];
         [arrayNeedsToBeUpdatedInNSUserDefaults addObject:dictionary];
     }
-    
     [[NSUserDefaults standardUserDefaults]setObject:arrayNeedsToBeUpdatedInNSUserDefaults forKey:TASKS_NSUSERDEFAULTS_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

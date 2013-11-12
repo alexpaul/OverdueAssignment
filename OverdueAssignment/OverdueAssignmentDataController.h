@@ -13,6 +13,6 @@
 
 + (NSDateFormatter *)dateFormatter;
 + (NSDictionary *)tasksAsAPropertyList:(Task *)newTask;
-+ (void)updateNSUserDefaultsAtIndex:(int)index withTask:(Task *)task;
++ (void)updateNSUserDefaultsAtIndex:(NSInteger)index withTask:(Task *)task;
 
 @end

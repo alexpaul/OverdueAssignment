@@ -28,7 +28,7 @@
     return dictionary;
 }
 
-+ (void)updateNSUserDefaultsAtIndex:(int)index withTask:(Task *)task
++ (void)updateNSUserDefaultsAtIndex:(NSInteger)index withTask:(Task *)task
 {
     // Retrieve Array from NSUserDefaults
     NSMutableArray *arrayToBeUpdatedInNSUserDefaults = [[[NSUserDefaults standardUserDefaults]arrayForKey:TASKS_NSUSERDEFAULTS_KEY] mutableCopy];
