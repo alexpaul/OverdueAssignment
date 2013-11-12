@@ -129,21 +129,43 @@
     }   
 }
 
-/*
+#pragma mark - Reorder Rows
+- (IBAction)reorderButtonPressed:(UIBarButtonItem *)sender
+{
+    self.tableView.editing = !self.tableView.isEditing;
+}
+
+#pragma mark - UITableView Methods
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
+    // Save the Task to Be Moved
+    Task *taskToBeMoved = [self.tasksArray objectAtIndex:fromIndexPath.row];
+    
+    // Remove the object from its current index
+    [self.tasksArray removeObjectAtIndex:fromIndexPath.row];
+    
+    // Insert the Task in its new index
+    [self.tasksArray insertObject:taskToBeMoved atIndex:toIndexPath.row];
+    
+    // Save Reordering in NSUserDefaults
+    NSMutableArray *arrayNeedsToBeUpdatedInNSUserDefaults = [[NSMutableArray alloc] init];
+    
+    for (Task *task in self.tasksArray) {
+        NSDictionary *dictionary = [OverdueAssignmentDataController tasksAsAPropertyList:task];
+        [arrayNeedsToBeUpdatedInNSUserDefaults addObject:dictionary];
+    }
+    
+    [[NSUserDefaults standardUserDefaults]setObject:arrayNeedsToBeUpdatedInNSUserDefaults forKey:TASKS_NSUSERDEFAULTS_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
-*/
 
-/*
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
 
 #pragma mark - UITableView Delegate
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath

@@ -44,7 +44,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="AEe-sN-6VO">
-                        <barButtonItem key="leftBarButtonItem" title="Reorder" id="Q2j-3c-4xx"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reorder" id="Q2j-3c-4xx">
+                            <connections>
+                                <action selector="reorderButtonPressed:" destination="vDb-G8-8Ao" id="YIH-Nn-reh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Task" id="WPz-5B-fnZ">
                             <connections>
                                 <segue destination="nl9-dI-wWR" kind="modal" identifier="addTask" id="EZI-og-7hi"/>
